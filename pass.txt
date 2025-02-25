@@ -1,0 +1,11 @@
+when a student is added, password will be automatically created
+
+username will be email
+
+-------------------------------------
+
+
+abhijith@gmail.com - qOGwnrxC
+
+saniya123@gmail.com - WbapWeUg
+

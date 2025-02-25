@@ -1,0 +1,17 @@
+orm querry
+-------------------------------
+
+model Students
+
+Students.objects.create(first_name = 'Vijith',
+
+                        last_name = 'V A',
+
+                        email = 'vijith4575@gmail.com',
+
+                        contact = 9526362525)
+
+
+
+
+
