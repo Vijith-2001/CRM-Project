@@ -161,6 +161,9 @@ class Student(BaseClass):        #this is the table name
     trainer = models.ForeignKey('trainers.Trainers',null=True,on_delete=models.SET_NULL)
 
 
+
+
+
   #using magic method- string representation
 
 

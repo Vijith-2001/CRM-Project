@@ -4,7 +4,7 @@ from students.models import BaseClass,DistrictChoices
 
 # Create your models here.
 
-class Trainers(BaseClass):
+class AcademicCounsellors(BaseClass):
 
     profile = models.OneToOneField('authentication.Profile',on_delete=models.CASCADE)
 
@@ -16,7 +16,7 @@ class Trainers(BaseClass):
 
     employee_id = models.CharField(max_length=10)
 
-    photo = models.ImageField(upload_to='trainers')
+    photo = models.ImageField(upload_to='academiccounsellor')
 
     email = models.EmailField()
 
@@ -34,9 +34,9 @@ class Trainers(BaseClass):
     
     stream = models.CharField(max_length=25)
 
-    id_proof = models.FileField(upload_to='trainers/idproof')
+    id_proof = models.FileField(upload_to='academic-counsellor/idproof')
 
-    course = models.ForeignKey('courses.Courses',null=True,on_delete=models.SET_NULL)   #if a student is dropped from course, use CASCADE
+
 
     def __str__(self):
 
@@ -44,6 +44,9 @@ class Trainers(BaseClass):
     
     class Meta:
 
-        verbose_name = 'Trainers'
+        verbose_name = 'Academic Counsellors'
 
-        verbose_name_plural ='Trainers'
+        verbose_name_plural ='Academic Counsellors'
+
+
+
